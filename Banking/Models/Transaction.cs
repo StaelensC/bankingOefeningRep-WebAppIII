@@ -2,7 +2,7 @@
 
 namespace Banking.Models
 {
-    class Transaction
+    public class Transaction
     {
 
         #region Properties
