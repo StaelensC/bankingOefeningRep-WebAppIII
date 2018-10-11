@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Banking.Models
 {
-    public class BankAccount
+    public class BankAccount : IBankAccount
     {
         #region Fields
         private string _accountNumber;
@@ -12,7 +12,7 @@ namespace Banking.Models
 
         #region Properties
         public string AccountNumber { get => _accountNumber; private set => _accountNumber = value; }
-        public decimal Balance { get; set; }
+        public decimal Balance { get; private set; }
         public int NumberOfTransactions => _transactions.Count;
         #endregion
 
